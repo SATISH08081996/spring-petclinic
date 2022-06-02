@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git clone ') {
+            steps {
+                echo 'cloning the repository'
+            }
+        }
+            
+            
+                    stage('build') {
+            steps {
+                echo 'buildind the code'
+            }
+        }
+        
+        
+        
+         stage('testing') {
+            steps {
+                echo 'testing  the code'
+            }
+         }
+         
+         
+         
+                stage('deploy') {
+            steps {
+                echo 'deploy  the code'
+            }
+         }
+    }
+}
