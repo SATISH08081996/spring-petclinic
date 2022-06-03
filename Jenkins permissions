@@ -1,0 +1,8 @@
+Install docker on jenkins
+
+Install docker pipeline plugin
+
+usermod -aG docker jenkins
+
+
+chmod +x /var/run/docker.sock
